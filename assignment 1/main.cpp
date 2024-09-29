@@ -45,10 +45,10 @@ int main()
     cout << "How to play, Choose a number in you mind, if the number appers in the screen then your a winner, If not you can try again by pressing 'y' at the end, \nHint: Some numbers will be repeated from previoud roll\n";
 
     int previousWinningNumbers[TOTAL_NUMBERS] = {};
+    int winningNumbers[TOTAL_NUMBERS] = {};
     char playAgain;
     do
     {
-        int winningNumbers[TOTAL_NUMBERS] = {};
         // Generate winning numbers and save them in the array
         generateWinningNumbers(winningNumbers, previousWinningNumbers);
 
