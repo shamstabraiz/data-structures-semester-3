@@ -42,7 +42,7 @@ int main()
 {
     srand(time(0));
     cout << "---------------------------Wellcome To Lottery By Shams Tabraiz----------------------------------\n";
-    cout << "How to play, Choose a number in you mind, if the number appers in the screen then your a winner, If not you can try again by pressing 'y' at the end, \nHint: Some numbers will be repeated from previoud roll\n";
+    cout << "How to play, Choose a number in you mind, if the number appers in the screen then your a winner, If not you can try again by pressing 'y' at the end, \nHint: Some numbers will be repeated from previous roll\n";
 
     int previousWinningNumbers[TOTAL_NUMBERS] = {};
     int winningNumbers[TOTAL_NUMBERS] = {};
