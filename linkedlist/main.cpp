@@ -21,6 +21,8 @@ public:
     void deleteItem(const T& val);
     void addLast(const T& val);
     void display();
+    void reverse();
+
 };
 
 template <class T> void LinkedList<T>::addFirst(const T& val) {
@@ -79,6 +81,26 @@ template <class T> void LinkedList<T>::deleteItem(const T& val) {
     return;
 }
 
+template <class T> void LinkedList<T>::reverse() {
+    if (head == 0 || head->next == 0) {
+        throw ListEmptyExeption();
+        return;
+    }
+    Node* p, * q = head, * r = head->next;
+
+    head->next = 0;
+
+    while (r != 0) {
+        p = q;
+        q = r;
+        if (r != 0) {
+            r = r->next;
+            q->next = p;
+        }
+    }
+    head = q;
+}
+
 
 
 int main() {
@@ -93,6 +115,8 @@ int main() {
     marks.addLast(7);
     marks.addLast(8);
     marks.display();
+    marks.reverse();
+    marks.display();
     try {
         marks.deleteFirst();
     }
@@ -104,7 +128,7 @@ int main() {
         marks.deleteItem(4);
     }
     catch (ListItemNotFoundExecption& e) {
-        cout << "The item is not found in the list\n";
+        cout << "The item is not found in the list for deletion\n";
     }
 
     try {
