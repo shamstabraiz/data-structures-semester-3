@@ -152,7 +152,6 @@ int main() {
             try {
                 userData.deleteItem(getInputFromUser());
                 cout << "Element Has been Deleted\n\n";
-
             }
             catch (ListEmptyExeption& e) {
                 cout << "The List is Empty\n\n";
