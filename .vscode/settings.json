@@ -3,6 +3,9 @@
         "*.js": "javascriptreact",
         "*.embeddedhtml": "html",
         "iostream": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "ostream": "cpp"
     }
 }
