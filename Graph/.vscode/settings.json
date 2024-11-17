@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "fstream": "cpp",
+        "new": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "queue": "cpp"
+    },
+}
