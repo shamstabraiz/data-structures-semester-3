@@ -1,7 +1,8 @@
 {
     "files.associations": {
-        "*.embeddedhtml": "html",
         "*.js": "javascriptreact",
-        "iostream": "cpp"
+        "*.embeddedhtml": "html",
+        "iostream": "cpp",
+        "stdexcept": "cpp"
     }
 }
